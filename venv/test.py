@@ -235,18 +235,59 @@
 
 # 对于指定方法的入参的个数不一定，则可使用可变参来定义
 
-def sum(*args):
-    sum=0.0
-    if len(args)==0:
-        return sum
-    else:
-        for x in args:
-            sum=sum+x
-        return sum
+# def sum(*args):
+#     sum=0.0
+#     if len(args)==0:
+#         return sum
+#     else:
+#         for x in args:
+#             sum=sum+x
+#         return sum
+#
+# print(sum())
+# print(sum(1,3,4,5.6))
 
-print(sum())
-print(sum(1,3,4,5.6))
+#对list进行切片，及在从原来集合切出指定的集合 tuple同样可以进行同样的处理
+# [a:b:c] a代表的是起始位置，b代表的是截止位置，c代表的是去元素的间隔 也可以进行倒序切片
+# L=[1,2,3,4,5,6,7,8,9]
+# print(L[:])
+# print(L[:3])
+# print(L[::3])
+# print(L[-3:])
+# S=(2,3,4,5,6,5)
+# print(S[:])
+# print(S[:3])
 
+# 字符串的切片
+# s='123456'
+# print(s[::2])
 
+# 索引迭代适应关键字enumerate来实现对list的迭代,该关键字实现的是将list的索引和索引对应的值转换成tuple，list中包含多个tuple例如：
+# example
+# L=['zhangsan','lisa','wangwu','zhaoliu']
+#
+# for index,name in enumerate(L):
+#     print(index,'-',name)
 
+# dict的遍历  values（） itervalues() items()
+# d={
+#     'lisa':20,
+#     'zhangsan':12,
+#     'wangwu':33
+# }
+# for k in d.values():
+#     print(k)
+# for k in d.__iter__():
+#     print(k)
+# for k ,v in d.items():
+#     print(k,'-',v)
 
+# x=1
+#
+# for x in range(1,100,2):
+#     print(x*(x+1))
+
+# print([x*(x+1) for x in range(1,100,2)])
+
+# 多层表达式
+print([100*n1+10*n2+n3 for n1 in range(1,10) for n2 in range(1,10) for n3 in range(1,10) if n1==n3])

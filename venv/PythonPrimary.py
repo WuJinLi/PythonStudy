@@ -1,9 +1,12 @@
+#                   Python初级知识梳理和代码练习
+
+
 # print('Python was started in 1989 by "Guido".')
 # print('Python was started in \'1989\' by \"Guido".')
 #
 #
 # print(u'''静夜思
-#
+
 # 窗前明月光，
 # 疑是地上霜，
 # 举头望明月，
